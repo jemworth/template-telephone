@@ -1,0 +1,32 @@
+doctype html
+html
+
+  head
+    meta(charset='utf8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    meta(name='Template Agency Business', content='Template Agency Business')
+    meta(name='Jem Worth', content= "Jem Worth")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Template Telephone
+    link(href='//fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,300italic,400italic', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='css/chocolat.css', type='text/css', media='screen')
+    link(href='./css/bootstrap.css', rel='stylesheet', type='text/css', media='all')
+    link(href='./css/style.css', rel='stylesheet', type='text/css', media='all')
+    script(src='./js/jquery.min.js')
+    != css()
+  if _path == "/index.html"
+    ul.side_nav
+      li
+        a.active.scroll(href='#home')
+      li
+        a.scroll(href='#about')
+      li
+        a.scroll(href='#services')
+      li
+        a.scroll(href='#gallery')
+      li
+        a.scroll(href='#testimonials')
+      li
+        a.scroll(href='#news')
+      li
+        a.scroll(href='#contact')

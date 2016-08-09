@@ -1,0 +1,325 @@
+extends layout
+
+block content
+  #home.banner.two
+    .container
+      .header
+        .menu
+          a#activator.right_bt(href='#')
+            img(src='./img/menu.png', alt='')
+          #box.box
+            .box_content
+              .menu_box_list
+                ul
+                  li.active.act
+                    a.hvr-underline-from-center.scroll(href='index.html') Home
+                  li
+                    a.hvr-underline-from-center.scroll(href='#about') About
+                  li
+                    a.hvr-underline-from-center.scroll(href='#services') Services
+                  li
+                    a.hvr-underline-from-center.scroll.scroll(href='#gallery') Gallery
+                  li
+                    a.hvr-underline-from-center.scroll.scroll(href='#testimonials') Testimonials
+                  li
+                    a.hvr-underline-from-center.scroll.scroll(href='#news') News
+                  li
+                    a.hvr-underline-from-center.scroll.scroll(href='#contact') Contact
+              a#boxclose.boxclose
+                img(src='./img/close.png', alt='')
+        .clearfix
+      .logo.two
+        a(href='/')
+          h1
+            | Tele
+            span phone
+
+  .single.w3-agile
+    .container
+      .single-grids
+        .col-md-8.single-grid-left
+          .flex-slider-single.animated.wow.slideInLeft(data-wow-delay='.5s')
+            section.slider
+              .flexslider
+                ul.slides
+                  li
+                    .single-grid-left-grid
+                      img.img-responsive(src='./img/slide.jpg', alt=' ')
+                      .single-grid-left-grid1
+                        .single-grid-left-grid1-left
+                          h3
+                            | 30 
+                            span May
+                        .single-grid-left-grid1-right
+                          h4 vel illum qui dolorem eum fugiat
+                          p By: Jan Mark 
+                        .clearfix  
+                        p.fugiat
+                          | Nam libero tempore, cum soluta nobis est eligendi optio
+                          | cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                          | voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam
+                          | et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
+                          | voluptates repudiandae sint et molestiae non recusandae. Itaque earum
+                          | rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+                          | alias consequatur aut perferendis doloribus asperiores repellat.
+                        ul
+                          li
+                            a(href='#')
+                              span.glyphicon.glyphicon-user(aria-hidden='true')
+                              |  Jan Mark
+                          li
+                            a(href='#')
+                              span.glyphicon.glyphicon-heart(aria-hidden='true')
+                              |  20
+                          li
+                            a(href='#')
+                              span.glyphicon.glyphicon-tag(aria-hidden='true')
+                              |  5
+                          li
+                            span.glyphicon.glyphicon-edit(aria-hidden='true')
+                            |  Voluptatibus
+                  li
+                    .single-grid-left-grid.w3ls
+                      img.img-responsive(src='./img/slide2.jpg', alt=' ')
+                      .single-grid-left-grid1
+                        .single-grid-left-grid1-left
+                          h3
+                            | 3 
+                            span June
+                        .single-grid-left-grid1-right
+                          h4 repudiandae sint et molestiae non
+                          p By: Peter Park 
+                        .clearfix  
+                        p.fugiat
+                          | Nam libero tempore, cum soluta nobis est eligendi optio
+                          | cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                          | voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam
+                          | et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
+                          | voluptates repudiandae sint et molestiae non recusandae. Itaque earum
+                          | rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+                          | alias consequatur aut perferendis doloribus asperiores repellat.
+                        ul
+                          li
+                            a(href='#')
+                              span.glyphicon.glyphicon-user(aria-hidden='true')
+                              |  Peter Park
+                          li
+                            a(href='#')
+                              span.glyphicon.glyphicon-heart(aria-hidden='true')
+                              |  60
+                          li
+                            a(href='#')
+                              span.glyphicon.glyphicon-tag(aria-hidden='true')
+                              |  2
+                          li
+                            span.glyphicon.glyphicon-edit(aria-hidden='true')
+                            |  Recusandae
+            // FlexSlider
+            link(rel='stylesheet', href='css/flexslider.css', type='text/css', media='screen')
+            script(defer='', src='js/jquery.flexslider.js')
+            script(type='text/javascript').
+              $(window).load(function(){
+              $('.flexslider').flexslider({
+              animation: "slide",
+              start: function(slider){
+              $('body').removeClass('loading');
+              }
+              });
+              });
+            // End-slider-script
+          .popular-posts.w3l
+            h3 Popular Posts
+            .popular-posts-grids
+              .col-md-4.popular-posts-grid.animated.wow.slideInLeft(data-wow-delay='.5s')
+                .popular-posts-grid1
+                  a(href='single.html')
+                    img.img-responsive(src='./img/4.jpg', alt=' ')
+                  h4
+                    a(href='single.html') doloribus asperiores
+                  p Itaque earum rerum hic tenetur a sapiente delectus.
+              .col-md-4.popular-posts-grid.animated.wow.slideInLeft(data-wow-delay='.6s')
+                .popular-posts-grid1
+                  a(href='single.html')
+                    img.img-responsive(src='./img/n3.jpg', alt=' ')
+                  h4
+                    a(href='single.html') rerum hic tenetur
+                  p Itaque earum rerum hic tenetur a sapiente delectus.
+              .col-md-4.popular-posts-grid.animated.wow.slideInLeft(data-wow-delay='.7s')
+                .popular-posts-grid1
+                  a(href='single.html')
+                    img.img-responsive(src='./img/5.jpg', alt=' ')
+                  h4
+                    a(href='single.html') saepe eveniet ut et
+                  p Itaque earum rerum hic tenetur a sapiente delectus.
+              .clearfix  
+          .author.agile-its
+            h3 About Author
+            .author-grid.animated.wow.slideInLeft(data-wow-delay='.5s')
+              .author-grid-left
+                img.img-responsive(src='./img/6.png', alt=' ')
+              .author-grid-right
+                h4
+                  | Allen Rosy
+                  span Contractor Chief
+                p
+                  | Nam libero tempore, cum soluta nobis est eligendi optio
+                  | cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+                  | voluptas assumenda est, omnis dolor repellendus.
+                ul.social-nav.model-8
+                  li
+                    a.facebook(href='#')
+                      i
+                  li
+                    a.twitter(href='#')
+                      i  
+                  li
+                    a.g(href='#')
+                      i
+                  li
+                    a.p(href='#')
+                      i
+              .clearfix  
+          .leave-reply
+            h3.animated.wow.zoomIn(data-wow-delay='.5s') Leave a Reply
+            form(action='#', method='post')
+              textarea(name='Message', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Message...';}", required='') Message...
+              input(type='text', name='Name', value='Name...', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Name...';}", required='')
+              input(type='email', name='Email', value='Email...', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Email...';}", required='')
+              input(type='text', name='Subject', value='Subject...', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Subject...';}", required='')
+              input(type='submit', value='Submit')
+        .col-md-4.single-grid-right
+          .blog-right1
+            .search1.animated.wow.slideInUp(data-wow-delay='.5s')
+              h3 Search
+              form(action='#', method='post')
+                input(type='text', name='Email', value='Email...', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Email...';}", required='')
+                input(type='submit', value='Send')
+            .categories.animated.wow.slideInUp(data-wow-delay='.5s')
+              h3 Categories
+              ul
+                li
+                  a(href='#')
+                    i.glyphicon.glyphicon-arrow-right
+                    |  Aliquam dapibus tincidunt
+                li
+                  a(href='#')
+                    i.glyphicon.glyphicon-arrow-right
+                    |  Donec sollicitudin molestie
+                li
+                  a(href='#')
+                    i.glyphicon.glyphicon-arrow-right
+                    |  Fusce feugiat malesuada odio
+                li
+                  a(href='#')
+                    i.glyphicon.glyphicon-arrow-right
+                    |  Cum sociis natoque penatibus
+                li
+                  a(href='#')
+                    i.glyphicon.glyphicon-arrow-right
+                    |  Magnis dis parturient montes
+                li
+                  a(href='#')
+                    i.glyphicon.glyphicon-arrow-right
+                    |  Donec sollicitudin molestie
+            .categories.categories-mid.animated.wow.slideInUp(data-wow-delay='.5s')
+              h3 Archives
+              ul
+                li
+                  a(href='#')
+                    i.glyphicon.glyphicon-arrow-right
+                    |  May 20,2011
+                li
+                  a(href='#')
+                    i.glyphicon.glyphicon-arrow-right
+                    |  July 31,2012
+                li
+                  a(href='#')
+                    i.glyphicon.glyphicon-arrow-right
+                    |  January 20,2013
+                li
+                  a(href='#')
+                    i.glyphicon.glyphicon-arrow-right
+                    |  November 2,2014
+                li
+                  a(href='#')
+                    i.glyphicon.glyphicon-arrow-right
+                    |  April 25,2015
+                li
+                  a(href='#')
+                    i.glyphicon.glyphicon-arrow-right
+                    |  May 14,2016
+            .related-posts
+              h3 Blog Posts
+              .related-post.animated.wow.slideInUp(data-wow-delay='.5s')
+                .related-post-left
+                  a(href='single.html')
+                    img.img-responsive(src='./img/n3.jpg', alt=' ')
+                .related-post-right
+                  h4
+                    a(href='single.html') Donec sollicitudin
+                  p
+                    | Aliquam dapibus tincidunt metus. 
+                    span Praesent justo dolor, lobortis.
+                  ul
+                    li
+                      span.glyphicon.glyphicon-time(aria-hidden='true')
+                      |  10:00 AM
+                    li
+                      span.glyphicon.glyphicon-calendar(aria-hidden='true')
+                      |  5 May 2016
+                .clearfix  
+              .related-post.animated.wow.slideInUp(data-wow-delay='.5s')
+                .related-post-left
+                  a(href='single.html')
+                    img.img-responsive(src='./img/4.jpg', alt=' ')
+                .related-post-right
+                  h4
+                    a(href='single.html') tincidunt metus
+                  p
+                    | Aliquam dapibus tincidunt metus. 
+                    span Praesent justo dolor, lobortis.
+                  ul
+                    li
+                      span.glyphicon.glyphicon-time(aria-hidden='true')
+                      |  11:30 AM
+                    li
+                      span.glyphicon.glyphicon-calendar(aria-hidden='true')
+                      |  9 May 2016
+                .clearfix  
+              .related-post.animated.wow.slideInUp(data-wow-delay='.5s')
+                .related-post-left
+                  a(href='single.html')
+                    img.img-responsive(src='./img/5.jpg', alt=' ')
+                .related-post-right
+                  h4
+                    a(href='single.html') earum rerum hic
+                  p
+                    | Aliquam dapibus tincidunt metus. 
+                    span Praesent justo dolor, lobortis.
+                  ul
+                    li
+                      span.glyphicon.glyphicon-time(aria-hidden='true')
+                      |  12:30 PM
+                    li
+                      span.glyphicon.glyphicon-calendar(aria-hidden='true')
+                      |  17 May 2016
+                .clearfix  
+              .related-post.animated.wow.slideInUp(data-wow-delay='.5s')
+                .related-post-left
+                  a(href='single.html')
+                    img.img-responsive(src='./img/n2.jpg', alt=' ')
+                .related-post-right
+                  h4
+                    a(href='single.html') saepe eveniet ptates
+                  p
+                    | Aliquam dapibus tincidunt metus. 
+                    span Praesent justo dolor, lobortis.
+                  ul
+                    li
+                      span.glyphicon.glyphicon-time(aria-hidden='true')
+                      |  2:00 PM
+                    li
+                      span.glyphicon.glyphicon-calendar(aria-hidden='true')
+                      |  23 May 2016
+                .clearfix  
+        .clearfix  

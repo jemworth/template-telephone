@@ -1,0 +1,234 @@
+extends layout
+
+block content
+  #home.banner
+        .container
+          .header
+            .menu
+              a#activator.right_bt(href='#')
+                img(src='./img/menu.png', alt='')
+              #box.box
+                .box_content
+                  .menu_box_list
+                    ul
+                      li.active.act
+                        a.hvr-underline-from-center.scroll(href='index.html') Home
+                      li
+                        a.hvr-underline-from-center.scroll(href='#about') About
+                      li
+                        a.hvr-underline-from-center.scroll(href='#services') Services
+                      li
+                        a.hvr-underline-from-center.scroll.scroll(href='#gallery') Gallery
+                      li
+                        a.hvr-underline-from-center.scroll.scroll(href='#testimonials') Testimonials
+                      li
+                        a.hvr-underline-from-center.scroll.scroll(href='#news') News
+                      li
+                        a.hvr-underline-from-center.scroll.scroll(href='#contact') Contact
+                  a#boxclose.boxclose
+                    img(src='./img/close.png', alt='')
+            .clearfix
+          .logo
+            a(href='index.html')
+              h1
+                | Tele
+                span phone
+          .banner-info
+            h2
+              | We Provide The Best Service At The
+              span  Right Price.
+  #about.about
+    .container
+      .col-md-6.ab-right.w3l
+        h3 Welcome to our Telephone
+        h4
+          | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+        p
+          img.img-responsive(src='./img/quote.png', alt='')
+          |  Lorem ipsum dolor sit amet, consectetuer adipiscing elit lobortis ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
+      .clearfix
+  #services.fast.service
+    .container
+      h3.tittle Our Services
+      .serve
+        .col-md-6.fast-left.w3ls
+          img.img-responsive(src='./img/4.jpg', alt='')
+        .col-md-6.fast-right
+          h3 Fast service
+          h5 Lorem ipsum dolor sit amet
+          p
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
+          a.view.scroll(href='#gallery')
+            | VIEW GALLERY
+            i.arrow-rt1
+        .clearfix
+      .fast-srve
+        .col-md-6.fast-right1
+          h3 Fast service
+          h5 Lorem ipsum dolor sit amet
+          p
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
+          a.view.scroll(href='#gallery')
+            | VIEW GALLERY
+            i.arrow-rt1
+        .col-md-6.fast-left1
+          img.img-responsive(src='./img/5.jpg', alt='')
+        .clearfix
+  #gallery.gallery
+    .container
+      h3.tittle Gallery
+      .gallery-grids.w3l-agile
+        .col-md-6.baner-top
+          figure.effect-bubba
+            a.b-link-stripe.b-animate-go.thickbox(href='./img/g1.jpg', rel='title')
+              img.img-responsive(src='./img/g1.jpg', alt='')
+              figcaption
+                h4 Telephone
+                p In sit amet sapien eros Integer dolore magna aliqua
+        .col-md-6.baner-top
+          figure.effect-bubba
+            a.b-link-stripe.b-animate-go.thickbox(href='./img/g2.jpg', rel='title')
+              img.img-responsive(src='./img/g2.jpg', alt='')
+              figcaption
+                h4 Telephone
+                p In sit amet sapien eros Integer dolore magna aliqua
+        .clearfix  
+        .baner-row
+          .col-md-4.baner-bottom
+            figure.effect-bubba
+              a.b-link-stripe.b-animate-go.thickbox(href='./img/g3.jpg', rel='title')
+                img.img-responsive(src='./img/g3.jpg', alt='')
+                figcaption
+                  h4.sec Telephone
+                  p In sit amet sapien eros Integer dolore magna
+          .col-md-4.baner-bottom
+            figure.effect-bubba
+              a.b-link-stripe.b-animate-go.thickbox(href='./img/g4.jpg', rel='title')
+                img.img-responsive(src='./img/g4.jpg', alt='')
+                figcaption
+                  h4.sec Telephone
+                  p In sit amet sapien eros Integer dolore magna
+          .col-md-4.baner-bottom
+            figure.effect-bubba
+              a.b-link-stripe.b-animate-go.thickbox(href='./img/g5.jpg', rel='title')
+                img.img-responsive(src='./img/g5.jpg', alt='')
+                figcaption
+                  h4.sec Telephone
+                  p In sit amet sapien eros Integer dolore magna
+          .clearfix  
+        .col-md-6.baner-top
+          figure.effect-bubba
+            a.b-link-stripe.b-animate-go.thickbox(href='./img/g6.jpg', rel='title')
+              img.img-responsive(src='./img/g6.jpg', alt='')
+              figcaption
+                h4 Telephone
+                p In sit amet sapien eros Integer dolore magna aliqua
+        .col-md-6.baner-top
+          figure.effect-bubba
+            a.b-link-stripe.b-animate-go.thickbox(href='./img/g3.jpg', rel='title')
+              img.img-responsive(src='./img/g3.jpg', alt='')
+              figcaption
+                h4 Telephone
+                p In sit amet sapien eros Integer dolore magna aliqua
+        .clearfix  
+  #testimonials.customers
+    .container
+      h3.tittle Testimonials
+      .customer-1
+        .ourhappy.agile-its
+          #section-1.wmuSlider.example1.section
+            article(style='position: absolute; width: 100%; opacity: 0; height: 240px;')
+              h4 Our Happy Customers
+              h6 George Richard
+              p
+                | Great service menu is awesome,there services are not In sit amet sapien eros Integer dolore magna aliqua only great but also in the right price.i'll highly recommend
+              ul.test
+                li
+                  img.img-responsive(src='./img/9.jpg', alt='')
+                li
+                  img.img-responsive(src='./img/10.jpg', alt='')
+                li
+                  img.img-responsive(src='./img/11.jpg', alt='')
+            article(style='position: absolute; width: 100%; opacity: 0; height: 240px;')
+              h4 Our Happy Customers
+              h6 George Richard 2
+              p
+                | Great service menu is awesome,there services are not In sit amet sapien eros Integer dolore magna aliqua only great but also in the right price.i'll highly recommend
+              ul.test
+                li
+                  img.img-responsive(src='./img/10.jpg', alt='')
+                li
+                  img.img-responsive(src='./img/11.jpg', alt='')
+                li
+                  img.img-responsive(src='./img/9.jpg', alt='')
+            article(style='position: absolute; width: 100%; opacity: 0; height: 240px;')
+              h4 Our Happy Customers
+              h6 George Richard 3
+              p
+                | Great service menu is awesome,there services are not In sit amet sapien eros Integer dolore magna aliqua only great but also in the right price.i'll highly recommend
+              ul.test
+                li
+                  img.img-responsive(src='./img/11.jpg', alt='')
+                li
+                  img.img-responsive(src='./img/9.jpg', alt='')
+                li
+                  img.img-responsive(src='./img/10.jpg', alt='')
+            ul.wmuSliderPagination
+              li
+                a(href='#') 0
+              li
+                a(href='#') 1
+              li
+                a(href='#') 2
+  #news.new.service
+    .container
+      h3.tittle Our News
+      .news-top.main
+        .col-md-6.new-left
+          img.img-responsive(src='./img/n1.jpg', alt='')
+        .col-md-6.new-right
+          h3
+            a(href='/single') 25.05.2016
+          h5
+            a(href='single.html') Lorem ipsum dolor sit amet
+          p
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
+          a.view(href='/single')
+            | Read More 
+            i.arrow-rt1
+        .clearfix
+      .news-top.one
+        .col-md-6.new-right1
+          h3
+            a(href='/single') 02.06.2016
+          h5
+            a(href='/single') Lorem ipsum dolor sit amet
+          p
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
+          a.view(href='/single')
+            | Read More
+            i.arrow-rt1
+        .col-md-6.new-left1
+          img.img-responsive(src='./img/n3.jpg', alt='')
+        .clearfix
+      .news-top.w3l
+        .col-md-6.new-left
+          img.img-responsive(src='./img/n2.jpg', alt='')
+        .col-md-6.new-right.w3l
+          h3
+            a(href='/single') 25.05.2016
+          h5
+            a(href='/single') Lorem ipsum dolor sit amet
+          p
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
+          a.view(href='/single')
+            | Read More
+            i.arrow-rt1
+        .clearfix
+  #contact.daily
+    .container
+      h3 Get our daily service and deliver to your mail
+      .support
+        form
+          input.text(type='text', value='Enter your email...', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Enter your email...';}")
+          input.botton(type='submit', value='SUBSCRIBE')

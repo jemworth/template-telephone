@@ -1,0 +1,80 @@
+footer
+  .footer
+    .container
+      .footer-top
+        .col-md-4.footer-grid
+          h4 Lorem sadipscing 
+          p
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+        .col-md-4.footer-grid
+          h4 Address
+          ul.bottom
+            li
+              i.glyphicon.glyphicon-home
+              |                Address Name St. 63, City Name, Country Name
+            li
+              i.glyphicon.glyphicon-earphone
+              | 0986 345 321
+            li
+              i.glyphicon.glyphicon-envelope
+              a mail@yourcompany.com
+        .col-md-4.footer-grid.third
+          h4
+            span Contact
+            |  Us
+          .sign_up
+            p.sign Lorem ipsum dolor sit amet,consectetuer adipiscing elit.
+            form(action='#', method='post')
+              input(type='text', name='Name', value='Name...', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Name...';}", required='')
+              input(type='text', name='Email', value='Email...', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Email...';}", required='')
+              input(type='submit', value='Submit')
+        .clearfix  
+  .copy
+    p
+      | © 2016 Telephone. All Rights Reserved
+  .clearfix  
+  a#toTop.scroll(href='#home', style='display: block;')
+    span#toTopHover(style='opacity: 1;')
+  script(type='text/javascript').
+    $(document).ready(function() {
+    $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+!= js()
+script(src='./js/jquery.wmuSlider.js')
+script.
+  $(document).ready(function() {
+  $('.example1').wmuSlider();
+  });
+script(type='text/javascript', src='./js/move-top.js')
+script(type='text/javascript', src='./js/easing.js')
+script(type='text/javascript').
+  jQuery(document).ready(function($) {
+  $(".scroll").click(function(event){
+  event.preventDefault();
+  $('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+  });
+  });
+script(src='./js/jquery.chocolat.js')
+script(type='text/javascript').
+  $(function() {
+  $('.gallery a').Chocolat();
+  });
+script(type='text/javascript').
+  var $ = jQuery.noConflict();
+  $(function() {
+  $('#activator').click(function(){
+  $('#box').animate({'top':'0px'},500);
+  });
+  $('#boxclose').click(function(){
+  $('#box').animate({'top':'-700px'},500);
+  });
+  });
+  $(document).ready(function(){
+  //Hide (Collapse) the toggle containers on load
+  $(".toggle_container").hide();
+  //Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+  $(".trigger").click(function(){
+  $(this).toggleClass("active").next().slideToggle("slow");
+  return false; //Prevent the browser jump to the link anchor
+  });
+  });
